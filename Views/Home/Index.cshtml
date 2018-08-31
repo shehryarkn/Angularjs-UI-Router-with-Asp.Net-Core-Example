@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html ng-app="InfiniteLearning" lang="en">
+<head>
+
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="https://code.angularjs.org/1.2.13/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
+    
+    <script src="~/js/InfiniteLearning.js"></script>
+</head>
+<body>
+
+    <div class="row" style="margin:30px;">
+        <div class="col-sm-3">
+            <h3>Main Menu</h3>
+            <ul class="list-group">
+                <li class="list-group-item"><a ui-sref="Students">Students</a></li>
+                <li class="list-group-item"><a ui-sref="Teachers">Teachers</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-9">
+            <div ui-view="container-view"></div>
+        </div>
+    </div>
+
+</body>
+</html>
